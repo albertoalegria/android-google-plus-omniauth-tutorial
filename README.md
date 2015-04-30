@@ -50,9 +50,9 @@ Obviously, this first part needs to be implemented in our android application. L
 
 - To be able to use the Google+ SDK, follow [this documentation](https://developers.google.com/+/mobile/android/getting-started?hl=en).
 
-	After having followed this documentation, the **Identifiers** section of your project's [Google console](https://console.developers.google.com) should look like this :
+	At this point, the *identifiers* section of your project's [Google console](https://console.developers.google.com) should look like this :
 	
-	![Installed application](google-console-web-app.png)
+	![Google console project identifiers](google-console-web-app.png)
 
 > 	Notes: 
 > 
@@ -68,7 +68,7 @@ Obviously, this first part needs to be implemented in our android application. L
 
 - Remember that we want to request a one-time code, which will then be used by our rails server. To do so, we will need to specify which server we want to grant our server an access to the user's Google+ informations. That means we need to register a web application client in the [Google console](https://console.developers.google.com) under the same project than our installed application.
 
-	At this point, the **Identifiers** section of your project's [Google console](https://console.developers.google.com) should look like this :
+	At this point, the *identifiers* section of your project's [Google console project identifiers](https://console.developers.google.com) should look like this :
 	
 	![Installed application](google-console.png)
 
@@ -187,6 +187,10 @@ Ion.with(this)
 ```
 	
 > Note : we invalidate the one-time code as soon as it has been consumed by the server. Otherwise, the next time the user will try to authenticate, he will get the same code from Google, try to use it, and get an `invalid_grant` error.
+
+## References
+
+
 
 ## Your feedbacks are welcome !
 
