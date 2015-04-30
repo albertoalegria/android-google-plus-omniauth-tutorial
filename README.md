@@ -98,6 +98,7 @@ Let's see what we need on the server side to implement this route.
 	I made a [pull request](https://github.com/zquestz/omniauth-google-oauth2/pull/165) to make omniauth-google-oauth2 respond to our needs. It has not been integrated in the last version yet, that's why we need to directly fetch the repository.
 
 - Create a `SessionsController` and add an action like this:
+
 	```ruby
 	def create_from_google_oauth2
 		# Retrieve the user informations that omniauth fetched for us 
