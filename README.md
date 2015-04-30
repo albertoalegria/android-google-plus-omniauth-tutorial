@@ -91,7 +91,9 @@ Let's see what we need on the server side to implement this route.
 
 - First, add this line in your `Gemfile`:
 
-		gem 'omniauth-google-oauth2', github: 'zquestz/omniauth-google-oauth2', branch: 'master'
+	```ruby
+	gem 'omniauth-google-oauth2', github: 'zquestz/omniauth-google-oauth2', branch: 'master'
+	```
 	
 	I made a [pull request](https://github.com/zquestz/omniauth-google-oauth2/pull/165) to make omniauth-google-oauth2 respond to our needs. It has not been integrated in the last version yet, that's why we need to directly fetch the repository.
 
