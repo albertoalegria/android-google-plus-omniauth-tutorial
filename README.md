@@ -13,17 +13,21 @@ I made a sample android application and a sample rails server to illustrate what
 Here are the instructions to run it on your machine.
 
 First of all:
-	
-	$ git clone https://github.com/elcurator/android-google-plus-omniauth-tutorial
-	$ cd android-google-plus-omniauth-tutorial
+
+```bash
+$ git clone https://github.com/elcurator/android-google-plus-omniauth-tutorial
+$ cd android-google-plus-omniauth-tutorial
+```
 
 For the rails server:
 
-	$ cd web
-	$ echo "GOOGLE_KEY=your_google_key_here" >> .env
-	$ echo "GOOGLE_SECRET=your_google_secret_here" >> .env
-	$ bundle
-	$ foreman start
+```bash
+$ cd web
+$ echo "GOOGLE_KEY=your_google_key_here" >> .env
+$ echo "GOOGLE_SECRET=your_google_secret_here" >> .env
+$ bundle
+$ foreman start
+```
 	
 For the android application:
 
