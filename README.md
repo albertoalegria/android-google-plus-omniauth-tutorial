@@ -1,4 +1,4 @@
-#How to authenticate an android application to a rails server with [Omniauth](https://github.com/intridea/omniauth)
+#How to authenticate an android application to a rails server with Google+
 
 At elCurator, I have been in charge of the android application development lately. One of the new features we wanted was to be able to sign in with a Google account. At first I thought it would be easy to implement it with the Google+ SDK, and theoritically, it was. But in practice I ran into several issues which made me think that it is not trivial at all!
 
