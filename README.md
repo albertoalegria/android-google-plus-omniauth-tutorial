@@ -52,7 +52,7 @@ Obviously, this first part needs to be implemented in our android application. L
 
 	At this point, the *identifiers* section of your project's [Google console](https://console.developers.google.com) should look like this :
 	
-	![Google console project identifiers](google-console-web-app.png)
+	![Google console project identifiers](https://raw.githubusercontent.com/elcurator/android-google-plus-omniauth-tutorial/master/google-console-web-app.png)
 
 > 	Notes: 
 > 
@@ -70,7 +70,7 @@ Obviously, this first part needs to be implemented in our android application. L
 
 	At this point, the *identifiers* section of your project's [Google console project identifiers](https://console.developers.google.com) should look like this :
 	
-	![Installed application](google-console.png)
+	![Installed application](https://raw.githubusercontent.com/elcurator/android-google-plus-omniauth-tutorial/master/google-console.png)
 
 - You can now add the sign-in button by following [this documentation](https://developers.google.com/+/mobile/android/sign-in?hl=en). Be carefull, the first part of the documentation tells you how to connect your client directly to Google+, but what we want is to **enable our rails server to access to our client Google+ informations**. You will need to follow what's said in the **last part of the documentation** (*Enable server-side API access for your app*)
 
