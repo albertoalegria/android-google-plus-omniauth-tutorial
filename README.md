@@ -50,6 +50,10 @@ Obviously, this first part needs to be implemented in our android application. L
 
 - To be able to use the Google+ SDK, follow [this documentation](https://developers.google.com/+/mobile/android/getting-started?hl=en).
 
+	After having followed this documentation, the **Identifiers** section of your project's [Google console](https://console.developers.google.com) should look like this :
+	
+	![Installed application](google-console-web-app.png)
+
 > 	Notes: 
 > 
 >  - To register the installed application in the Google console, you need to specify a *SHA-1 fingerprint*. In the documentation they tell us to use the default debug keystore. **Don't use it for a signed APK, it won't work**! To generate a signed APK, you must use your own keystore. To work properly with Google+ OAuth, the *SHA-1 fingerprint* must be generated from the keystore you used to sign your APK.
@@ -63,6 +67,10 @@ Obviously, this first part needs to be implemented in our android application. L
 >	  [Note you can now use some specific parts of the play-services if you don't use every google service.](http://developer.android.com/google/play-services/setup.html?hl=en)
 
 - Remember that we want to request a one-time code, which will then be used by our rails server. To do so, we will need to specify which server we want to grant our server an access to the user's Google+ informations. That means we need to register a web application client in the [Google console](https://console.developers.google.com) under the same project than our installed application.
+
+	At this point, the **Identifiers** section of your project's [Google console](https://console.developers.google.com) should look like this :
+	
+	![Installed application](google-console.png)
 
 - You can now add the sign-in button by following [this documentation](https://developers.google.com/+/mobile/android/sign-in?hl=en). Be carefull, the first part of the documentation tells you how to connect your client directly to Google+, but what we want is to **enable our rails server to access to our client Google+ informations**. You will need to follow what's said in the **last part of the documentation** (*Enable server-side API access for your app*)
 
