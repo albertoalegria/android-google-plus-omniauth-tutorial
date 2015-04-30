@@ -151,7 +151,9 @@ At this point, when we post on the route `/auth/google_oauth/callback` with a `c
 
 	Then, add this code to our `config/initializers/omniauth.rb` file so omniauth knows which action to call when an error occurs:
 	
-		OmniAuth.config.on_failure = SessionsController.action(:oauth_failure)
+	```ruby
+	OmniAuth.config.on_failure = SessionsController.action(:oauth_failure)
+	```
 
 - We are ready to call the authentication route from our client. Using the library Ion to perform the request, here is the code we can add to our login activity, right after having fetched the one-time code from Google:
 
